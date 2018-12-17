@@ -1,0 +1,23 @@
+Understanding the Angular CLI Workspace File
+- https://nitayneeman.com/posts/understanding-the-angular-cli-workspace-file/
+
+Tree Shakeable Providers and Services in Angular
+- https://coryrylan.com/blog/tree-shakeable-providers-and-services-in-angular
+
+Flaw: Constructor does Real Work
+- http://misko.hevery.com/code-reviewers-guide/flaw-constructor-does-real-work/
+
+Lifecycle Hooks
+- https://angular.io/guide/lifecycle-hooks
+
+The Angular Library Series - Creating a Library with Angular CLI
+
+Post: 
+  1. https://blog.angularindepth.com/creating-a-library-in-angular-6-87799552e7e5
+  2. https://blog.angularindepth.com/creating-a-library-in-angular-6-part-2-6e2bc1e14121
+  3. https://blog.angularindepth.com/the-angular-library-series-publishing-ce24bb673275
+  
+GitHub: https://github.com/t-palmer/example-ng6-lib
+
+Global Error Handling with Angular2+
+- https://medium.com/@amcdnl/global-error-handling-with-angular2-6b992bdfb59c
