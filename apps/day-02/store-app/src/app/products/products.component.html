@@ -1,0 +1,20 @@
+<h3>Products</h3>
+
+<div>
+  Product Name: {{ productName }}
+</div>
+<div>
+  Price: {{ productPrice }}
+</div>
+
+<div>
+  <input type="text" class="form-control" [(ngModel)]="productName" (input)="onChange($event)">
+</div>
+
+<div>
+  <button class="btn btn-success" (click)="onSave()">Save</button>
+</div>
+
+<div>
+  {{ productName }} can be used for gaming.
+</div>

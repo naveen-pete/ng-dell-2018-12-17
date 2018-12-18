@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Dell Inspiron 15 7000 Core i7 7th Gen",
+      "description": "Whether it’s fast-paced racing or action-packed roleplay, the Dell Inspiron 15 laptop is designed to make your gaming experience truly delightful",
+      "price": 94990,
+      "isAvailable": true
+    },
+    {
+      "id": 2,
+      "name": "Dell Vostro 15 3000 Series Core i3 7th Gen",
+      "description": "Whether it’s fast-paced racing or action-packed roleplay, the Dell Inspiron 15 laptop is designed to make your gaming experience truly delightful",
+      "price": 31190,
+      "isAvailable": true
+    },
+    {
+      "id": 2,
+      "name": "Dell Inspiron 15 7000 Core i7 7th Gen",
+      "description": "Whether it’s fast-paced racing or action-packed roleplay, the Dell Inspiron 15 laptop is designed to make your gaming experience truly delightful",
+      "price": 94990,
+      "isAvailable": true
+    }
+  ]
+}
