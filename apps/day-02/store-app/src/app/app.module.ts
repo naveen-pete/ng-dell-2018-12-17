@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductFormComponent } from './product-form/product-form.component';
+import { SearchProductsPipe } from './common/search-products.pipe';
+import { HighlightDirective } from './common/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ProductFormComponent } from './product-form/product-form.component';
     HeaderComponent,
     ProductsComponent,
     ProductDetailComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    SearchProductsPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

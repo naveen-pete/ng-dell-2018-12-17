@@ -1,5 +1,5 @@
 <div class="card bg-light m-3">
-  <h4 class="card-header">{{ product.name | uppercase }}</h4>
+  <h4 class="card-header" appHighlight="lightblue">{{ product.name | uppercase }}</h4>
   <div class="card-body">
     <p [ngStyle]="{color: product.isAvailable ? 'green' : 'red' }" class="card-text">{{ product.description }}</p>
     <p class="card-text"><strong>Price:</strong> <em>{{ product.price | currency : 'INR' }}</em></p>

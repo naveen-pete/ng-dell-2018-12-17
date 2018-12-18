@@ -11,6 +11,12 @@
   </div>
 
   <div class="col-md-8">
-    <app-product-detail [product]="p" *ngFor="let p of products"></app-product-detail>
+    <input type="text"
+      class="form-control"
+      placeholder="Search..."
+      [(ngModel)]="searchText"
+    >
+
+    <app-product-detail [product]="p" *ngFor="let p of products | searchProducts : searchText : 'name'"></app-product-detail>
   </div>
 </div>
