@@ -8,8 +8,6 @@ import { Product } from '../models/product';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
-  product: Product = new Product();
-
   products: Product[] = [
     {
       id: 1,
@@ -34,14 +32,8 @@ export class ProductsComponent {
     }
   ];
 
-  currencyCode = 'INR';
-
-  applyBadge(product) {
-    return product.isAvailable ? 'badge-primary' : 'badge-danger';
-  }
-
-  onSubmit() {
-    this.products.unshift(this.product);
-    this.product = new Product();
+  onProductCreated(product: Product) {
+    this.products.unshift(product);
+    console.log('Products.onProductCreated() event handler invoked');
   }
 }
