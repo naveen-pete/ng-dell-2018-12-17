@@ -1,6 +1,8 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { Product } from '../models/product';
+import { LoggerService } from '../services/logger.service';
+import { ProductsService } from '../services/products.service';
 
 @Component({
   selector: 'app-product-form',
@@ -8,17 +10,21 @@ import { Product } from '../models/product';
   styleUrls: ['./product-form.component.css']
 })
 export class ProductFormComponent implements OnInit {
-  @Output() productCreated = new EventEmitter<Product>();
   showMessage = false;
   product: Product = new Product();
 
-  constructor() { }
+  constructor(
+    private loggerService: LoggerService,
+    private productsService: ProductsService
+  ) { }
 
   ngOnInit() {
   }
 
   onSubmit() {
-    this.productCreated.emit(this.product);
+    this.productsService.addProduct(this.product);
+
+    this.loggerService.log('ProductFormComponent.onSubmit() - productCreated event emitted.');
 
     this.product = new Product();
     this.showMessage = true;
