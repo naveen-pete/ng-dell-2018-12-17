@@ -1,0 +1,22 @@
+
+<div class="row">
+  <div class="col-md-12">
+      <h3>Products</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <app-product-form (productCreated)="onProductCreated($event)"></app-product-form>
+  </div>
+
+  <div class="col-md-8">
+    <input type="text"
+      class="form-control"
+      placeholder="Search..."
+      [(ngModel)]="searchText"
+    >
+
+    <app-product-detail [product]="p" *ngFor="let p of products | searchProducts : searchText : 'name'"></app-product-detail>
+  </div>
+</div>
