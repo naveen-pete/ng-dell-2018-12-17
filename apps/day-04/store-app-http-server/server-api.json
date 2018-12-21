@@ -20,6 +20,27 @@
       "price": 200,
       "isAvailable": false,
       "id": 4
+    },
+    {
+      "name": "p100",
+      "description": "p100 desc",
+      "price": 100,
+      "isAvailable": true,
+      "id": 5
+    },
+    {
+      "name": "p200",
+      "description": "p200 desc",
+      "price": 200,
+      "isAvailable": true,
+      "id": 6
+    },
+    {
+      "name": "p300",
+      "description": "p300 desc",
+      "price": 300,
+      "isAvailable": true,
+      "id": 7
     }
   ],
   "customers": [
