@@ -28,7 +28,7 @@ export class ProductDetailComponent implements OnInit {
         console.log(
           `Product id is not a number (or) is 0. (id = ${params['id']})`
         );
-        this.router.navigate(['/products']);
+        this.router.navigate(['/not-found']);
         return;
       }
 

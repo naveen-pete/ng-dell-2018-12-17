@@ -70,11 +70,11 @@ describe('ProductFormComponent', () => {
       empty()
     );
 
-    const form = fixture.debugElement.query(By.css('form'));
-    form.triggerEventHandler('submit', null);
+    // const form = fixture.debugElement.query(By.css('form'));
+    // form.triggerEventHandler('submit', null);
 
-    // const button = fixture.debugElement.query(By.css('#save'));
-    // button.nativeElement.click();
+    const button = fixture.debugElement.query(By.css('#save'));
+    button.nativeElement.click();
 
     expect(spy).toHaveBeenCalled();
   });

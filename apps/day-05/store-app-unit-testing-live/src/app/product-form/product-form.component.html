@@ -31,7 +31,7 @@
           <input type="checkbox" id="productIsAvailable" value="true" name="isAvailable" [ngModel]="product.isAvailable"> Available
         </label>
       </div>
-      <button name="save" type="submit" [disabled]="f.invalid" class="btn btn-primary mr-2">
+      <button name="save" id="save" type="submit" [disabled]="f.invalid" class="btn btn-primary mr-2">
         Save
       </button>
       <a class="btn btn-warning" routerLink="/products">
